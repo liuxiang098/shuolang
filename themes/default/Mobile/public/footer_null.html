@@ -1,0 +1,20 @@
+
+            
+            	<iframe id="x-frame" name="x-frame" style="display:none;"></iframe>
+<script src="/static/mui.min.js"></script>
+<script>
+mui.init();
+mui.plusReady(function() {
+	var self = plus.webview.currentWebview();  
+	if(self.back == "new") {
+		mui.back = function(event) {
+			window.history.go(-1);
+		};
+	}
+	return false;
+})
+</script>
+<include  file='public:mui'/> 
+                </body>
+                
+                </html>

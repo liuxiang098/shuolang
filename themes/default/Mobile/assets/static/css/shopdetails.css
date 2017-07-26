@@ -1,0 +1,150 @@
+#indexbanner img {max-height:1.35rem;}
+.am-slider-default {margin-bottom:0;}
+.am-slider-default .am-control-nav li a {
+	background-color: rgba(255,255,255,.3);
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 0px rgba(0,0,0,.3);
+}
+/*jiugong*/
+#jiugong { padding-bottom:0.1rem;}
+#jiugong a {display:block; float:left; width:20%; text-align:center; margin-top:0.1rem;}
+#jiugong a i {width:0.37rem; height:0.37rem; margin-bottom:0.05rem;}
+.icon-cate-1 {background: url(../image/index/cate/1.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-2 {background: url(../image/index/cate/2.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-3 {background: url(../image/index/cate/3.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-4 {background: url(../image/index/cate/4.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-5 {background: url(../image/index/cate/5.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-6 {background: url(../image/index/cate/6.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-7 {background: url(../image/index/cate/7.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-8 {background: url(../image/index/cate/8.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-9 {background: url(../image/index/cate/9.png?v=2) no-repeat;background-size:100%;}
+.icon-cate-10 {background: url(../image/index/cate/10.png?v=2) no-repeat;background-size:100%;}
+/*daypush*/
+#daypush {background:#ffffff;font-size:0.12rem; height:0.3rem; overflow:hidden; }
+#daypush a {}
+#daypush span {font-weight:bold; color:#666666;}
+.icon-daypush {width:0.545rem; height:0.13rem; margin-top:-0.05rem; margin-right:0.02rem;background: url(../image/index/icon/daypush.png) no-repeat;background-size:100%;}
+/*box1*/
+#box1 {padding-bottom:0;}
+.box1-item {
+	width:49%; float:left;margin-right:1%;
+}
+.box1-item:nth-child(even){
+margin-right:0; margin-left:1%;
+}
+.box1-head {margin-bottom:0.1rem; padding:0.08rem; padding-bottom:0; font-size:0.14rem; font-weight:bold;}
+.box1-head i {margin-right:0.05rem;}
+.box1-thumb {text-align:center; margin-bottom:0.1rem;}
+.box1-thumb img {width:90%; margin:0 auto;}
+.icon-clock {
+	width:0.14rem; height:0.14rem; 
+	background: url(../image/index/icon/clock.png) no-repeat;background-size:100%;
+}
+.icon-tag {
+	width:0.14rem; height:0.14rem; 
+	background: url(../image/index/icon/tag.png) no-repeat;background-size:100%;
+}
+.icon-jianzhu {
+	width:0.14rem; height:0.14rem; 
+	background: url(../image/index/icon/jianzhu.png) no-repeat;background-size:100%;
+}
+.icon-jiancai {
+	width:0.14rem; height:0.105rem; margin-top:-0.03rem;
+	background: url(../image/index/icon/jiancai.png) no-repeat;background-size:100%;
+}
+#box1-item-1 .box1-head {color:#f2564e;}
+#box1-item-2 .box1-head {color:#f0af0a;}
+#box1-item-3 .box1-head {color:#ff5c00;}
+#box1-item-4 .box1-head {color:#ff6700;}
+/*video*/
+.video-item {float:left; width:48%; margin-right:2%;}
+.video-item:nth-child(even){
+margin-right:0; margin-left:2%;
+}
+.icon-videologo {
+	width:0.33rem; height:0.24rem; margin-top:0.07rem;
+	background: url(../image/index/video/logo.png) no-repeat;background-size:100%;
+}
+.video-thumb {position:relative; display:block;}
+.video-thumb img {border-radius:5px;}
+.video-thumb i {position:absolute; top:30%; left:45%; z-index:10;}
+.video-thumb span {position:absolute; bottom:0.05rem; right:0.05rem; z-index:10;
+	color:#ffffff; padding:0.02rem; background-color:rgba(0,0,0,0.2); border-radius:0.02rem; display:block;
+}
+.video-title {line-height:0.3rem;}
+.icon-play {
+	width:0.26rem; height:0.26rem; 
+	background: url(../image/index/video/play.png) no-repeat;background-size:100%;
+}
+/*box2*/
+#box2 {padding:0.08rem 0;}
+.box2-item {
+	width:32%; float:left;margin-right:2%;
+}
+.box2-item:nth-child(3n+3){
+margin-right:0; margin-right:0%;
+}
+.box2-head {margin-bottom:0.1rem; padding:0.08rem; padding-bottom:0; font-size:0.16rem;}
+.box2-head i {margin-right:0.05rem;}
+.box2-thumb {text-align:center; margin-bottom:0.1rem;}
+.box2-thumb img {width:90%; margin:0 auto;}
+.box2-price {text-align:center; font-size:0.12rem; margin-bottom:0.1rem;}
+#box2-1 .box2-head {color:#f0af0a;}
+.icon-guo {
+	width:0.14rem; height:0.14rem; margin-top:-0.05rem;
+	background: url(../image/index/icon/guo.png) no-repeat;background-size:100%;
+}
+#box2-2 .box2-head {color:#ff6700;}
+.icon-shop {
+	width:0.14rem; height:0.14rem; margin-top:-0.05rem;
+	background: url(../image/index/icon/shop.png) no-repeat;background-size:100%;
+}
+#box2-3 .box2-head {color:#70b500;}
+.icon-tree {
+	width:0.14rem; height:0.14rem; margin-top:-0.05rem;
+	background: url(../image/index/icon/tree.png) no-repeat;background-size:100%;
+}
+/*box3*/
+.box3-item {
+	width:100%; 
+}
+.box3-head {margin-bottom:0.1rem; padding:0.08rem; padding-bottom:0; font-size:0.16rem; color:gray;}
+.box3-head i {margin-right:0.05rem;}
+.box3-thumb {text-align:center; margin-bottom:0.1rem; margin-right:0.1rem;}
+.box3-thumb img {border:#dbdbdb solid 1px; width:0.95rem; height:0.8rem;}
+.box3-item h2 {line-height:0.22rem; height:0.22rem; overflow:hidden; font-size:0.16rem;}
+.box3-desc {height:0.34rem; line-height:0.17rem; margin-top:0.05rem; color:#666666;}
+.box3-item .text1 {color:#f14a42;}
+.box3-item .text2 {color:#7cbb16;}
+.icon-house {
+	width:0.14rem; height:0.14rem; margin-top:-0.05rem;
+	background: url(../image/index/icon/house.png) no-repeat;background-size:100%;
+}
+.icon-special {
+	width:0.14rem; height:0.14rem; margin-top:-0.05rem;
+	background: url(../image/index/icon/special.png) no-repeat;background-size:100%;
+}
+/*zhibo*/
+#zhibo {
+	
+}
+#zhibo .am-slider-default {background:none;}
+#zhibo-head {
+	color:#f03f36; margin-bottom:0.1rem;
+}
+.zhibo-item {background:#ffffff; margin-right:0rem;}
+.icon-video {
+	width:0.14rem; height:0.14rem; margin-top:-0.05rem;
+	background: url(../image/index/icon/video.png) no-repeat;background-size:100%;
+}
+.zhibo-state {
+	position:absolute; left:0.05rem; top:0.05rem; color:#ffffff;
+}
+.icon-dot {width:0.07rem; height:0.07rem; background:#f2564e; border-radius:50%; margin-right:0.05rem;}
+.zhibo-title {padding:0 0.02rem; font-size:0.16rem; line-height:0.25rem;}
+.zhibo-add {padding:0 0.02rem; color:#666666;}
+.tit{width: 100%;height: 80px;}
+.tit-1{margin-top: 50px;margin-left: 20px;margin-right: 20px;}
+.titl{width: 99%;height: 60px;}
+.tit-2{margin-top: 50px;margin-left: 35px;margin-right: 35px;}
+.photo1{width: 423px;height: 423px;}

@@ -1,0 +1,100 @@
+
+<include  file='public:header'/>
+
+<div class="mainBt">
+   <ul>
+        <li class="li1">建材</li>
+        <li class="li2">建材分类</li>
+        <li class="li2 li3">分类列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="left">
+                <{:BA('tuan/create','','添加抢购')}>
+            </div>
+            <div class="right">
+                <form class="search_form" method="post" action="<{:U('tuan/index')}>"> 
+                    <div class="seleHidden" id="seleHidden">
+                        <div class="seleK">
+                            <label>
+                                <input type="hidden" id="shop_id" name="shop_id" value="<{$shop_id|default=''}>"/>
+                                <input type="text"   id="shop_name" name="shop_name" value="<{$shop_name}>" class="inptText w200" />
+                                <a  href="<{:U('shop/select')}>" mini="select" w="800" h="600" class="sumit">选择商家</a>  
+                            </label>
+                         
+                            <label>
+                                <span>状态</span>
+                                <select name="audit" class="selecttop">
+                                    <option value="0"  >全部</option>
+                                    <option value="-1" <eq name="audit" value="-1">selected="selected"</eq> >等待审核</option>
+                                    <option value="1" <eq name="audit" value="1">selected="selected"</eq>>正常</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>关键字：</span>
+                                <input type="text" name="keyword" id="keyword"  value="<{$keyword}>"   class="inptText" />
+                                <input type="submit" value="  搜索"  class="inptButton" />
+                            </label>
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+
+                        <td class="w50"><input type="checkbox" class="checkAll" rel="tuan_id" /></td>
+                        <td class="w50">ID</td>
+                        <td>商家</td>
+                        <td>建材名称</td>
+                        <td>图片</td>
+                         <td>URL</td>
+                        <td>价格</td>
+                        <td>数量</td>
+                        <td>点击量</td>
+                        <td>库存量</td>
+                        <td>状态</td>
+                        <td>生产地</td>
+                        <td>创建日期</td>
+                        <td>操作</td>
+
+                    </tr>
+                    <volist name="list" id="var" key="index"> 
+                        <tr>
+                            <td><input class="child_tuan_id" type="checkbox" name="tuan_id[]" value="<{$var.tuan_id}>" /> </td>
+                            <td><{$var.building_id></td>
+                            <td><{$shops[$var['shop_id']]['shop_name']}></td>
+                            <td><{$var.building_name}></td>
+                            <td><img src="__ROOT__/attachs/<{$var.building_img}>" class="w80" /></td>
+                            <td><{$var.building_url}></td>
+                            <td><{$var.building_price}></td>
+                            <td><{$var.building_num}></td>
+                            <td><{$var.building_clicknum}></td>
+                            <td><{$var.building_store}></td>
+                            <td><{$var.building_state}></td>
+                            <td><{$var.building_addtime|date='Y-m-d',###}></td>
+                        <td>
+
+                            <{:BA('tuan/edit',array("tuan_id"=>$var["tuan_id"]),'编辑','','remberBtn')}>
+                            <{:BA('tuan/delete',array("tuan_id"=>$var["tuan_id"]),'删除','act','remberBtn')}>
+                        </td>
+                        </tr>
+                    </volist>
+                </table>
+                <{$page}>
+            </div>
+            <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+                <div class="left">
+                    <{:BA('tuan/delete','','批量删除','list',' a2')}>
+                    <{:BA('tuan/audit','','批量审核','list',' remberBtn')}>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>  
+

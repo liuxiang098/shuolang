@@ -1,0 +1,73 @@
+#warpmain {
+    padding-bottom: 0;
+}
+
+#pagebanner img {max-height:1.35rem;}
+/*jiugong*/
+#jiugong { padding-bottom:0.1rem;}
+#jiugong a {display:block; float:left; width:20%; text-align:center; margin-top:0.1rem;}
+#jiugong a i {width:0.37rem; height:0.37rem; margin-bottom:0.05rem;}
+.icon-cate-1 {background: url(../image/page/cate/1.png) no-repeat;background-size:100%;}
+.icon-cate-2 {background: url(../image/page/cate/2.png) no-repeat;background-size:100%;}
+.icon-cate-3 {background: url(../image/page/cate/3.png) no-repeat;background-size:100%;}
+.icon-cate-4 {background: url(../image/page/cate/4.png) no-repeat;background-size:100%;}
+.icon-cate-5 {background: url(../image/page/cate/5.png) no-repeat;background-size:100%;}
+.icon-cate-6 {background: url(../image/page/cate/6.png) no-repeat;background-size:100%;}
+.icon-cate-7 {background: url(../image/page/cate/7.png) no-repeat;background-size:100%;}
+.icon-cate-8 {background: url(../image/page/cate/8.png) no-repeat;background-size:100%;}
+.icon-cate-9 {background: url(../image/page/cate/9.png) no-repeat;background-size:100%;}
+.icon-cate-10 {background: url(../image/page/cate/10.png) no-repeat;background-size:100%;}
+/*jiugong-test*/
+#jiugong-test {padding-top:0;}
+#jiugong-test a {display:block; float:left; width:33%; text-align:center; margin:0.05rem 0; font-size:0.14rem; font-weight:600;}
+#jiugong-test a.jiugong-text-1 .button_my{color:#f03f36;border-radius:50px;border-color:#f03f36;width: 85%;height: 33%;background-color: white;}
+#jiugong-test a.jiugong-text-2 .button_my{color:#ff6700;border-radius:50px;border-color:#ff6700;width: 85%;height: 33%;background-color: white;}
+#jiugong-test a.jiugong-text-3 .button_my{color:#f0af0a;border-radius:50px;border-color:#f0af0a;width: 85%;height: 33%;background-color: white;}
+/*模块共用CSS*/
+.box-head {padding:0.05rem 0.01rem;}
+.box-head h2 {padding-left:0.05rem; font-size:0.14rem; font-weight:bold;border-left:#ff6b00 solid 3px; color:#ff6700;}
+.am-slider-panel {padding-left:0.08rem; padding-bottom:0.05rem;}
+.panel-add {color:#666666;}
+.box-head2 {padding:0.05rem 0;padding-left:0.08rem; font-size:0.16rem;}
+/*jgcase*/
+#vr-items .panel-thumb img {
+	border-radius:0.05rem;
+}
+#vr-items .panel-thumb i.icon-vr {
+	width:0.26rem; height:0.26rem;
+	background: url(../image/page/vr/vr.png) no-repeat;background-size:100%;
+	position:absolute; left:0.45rem; top:0.4rem; z-index:999;
+}
+/*memberlist*/
+.memberlist-item {width:32%; margin-right:2%; margin-bottom:0.05rem; float:left;}
+.memberlist-item:nth-child(3n+3) {margin-right:0;}
+.memberlist-title {font-size:0.11rem; line-height:0.2rem;}
+.memberlist-title span {color:#ff6700; float:right;}
+.memberlist-job {font-size:0.11rem; color:#666;}
+/*committed*/
+#committed-head {text-align:center;}
+.icon-committed {
+	width:1.4rem; height:0.14rem;
+	background: url(../image/page/committed/committed.png) no-repeat;background-size:100%;
+}
+#committed-items {
+	margin-top:0.1rem;
+}
+#committed-items i {
+	width:0.275rem; height:0.2rem;
+}
+#committed-items .icon-free {
+	background: url(../image/page/committed/1.png) no-repeat;background-size:100%;
+}
+#committed-items .icon-volume {
+	background: url(../image/page/committed/2.png) no-repeat;background-size:100%;
+}
+#committed-items .icon-service {
+	background: url(../image/page/committed/3.png) no-repeat;background-size:100%;
+}
+#committed-items .icon-phone {
+	background: url(../image/page/committed/4.png) no-repeat;background-size:100%;
+}
+#committed-items a {display:block; width:25%; float:left; text-align:center; color:#ff6700;}
+#committed-items p {line-height:0.4rem; margin-top:0.05rem;}
+#committed-items .committed-phone p {line-height:0.2rem;}

@@ -1,0 +1,138 @@
+<include file='public:header_new'/>   
+<link rel="stylesheet" href="__TMPL__assets/static/css/page1.css?v=<?=time()?>">
+
+<style type="text/css">
+	.my_shop{
+		width:100%;
+		height:88px;
+		margin-bottom:1px;
+		/*background-color:pink;*/
+		/*position:relative;*/
+	}
+	.my_img{
+		width:80px;
+		height:80px;
+		margin-left:4px;
+		/*position:absolute;*/
+		/*top:4px;*/
+		float:left;
+		margin-top: 4px;
+	}
+	.my_right{
+		width:71%;
+		height:88px;
+		/*background-color:green;*/
+		float:left;
+		margin-left: 4px;
+	}
+	.my_p{
+		line-height: 23px;
+		color:#999;
+		font-size: 13px;
+	}
+	#gengduo{
+		color::#FF6700;
+	}
+</style>
+
+<div id="pagebanner">
+<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/banner.jpg"></a>
+</div>
+<!--九宫格-->
+<div class="wp bg-white" id="jiugong">
+	<foreach name="cate" item="r" key="k"> 
+	<!-- <a href="<{:U('shop/index', array('cat' => $r['cate_id']))}>"><i class="icon-cate-<{$k+1}>"></i><p><{$r.cate_name}></p></a> -->
+	<a href="<{$r.d1}>"><i class="icon-cate-<{$k+1}>"></i><p><{$r.cate_name}></p></a>
+	</foreach>
+</div>
+<!--九宫格 文字-->
+<div class="wp bg-white" id="jiugong-test">
+	<foreach name="nav" item="r" key="k"> 
+	<!-- <a href="<{$r.url}>" class="jiugong-text-<if condition="$k elt 2">1<elseif condition="$k elt 5 && $k egt 3"/>2<else/>3</if>"><{$r.nav_name}></a> -->
+	<a href="<{$r.url}>" class="jiugong-text-<if condition="$k elt 2">1<elseif condition="$k elt 5 && $k egt 3"/>2<else/>3</if>"><button class="button_my"><{$r.nav_name}></button></a>
+	</foreach>
+	<div class="am-cf"></div>
+</div>
+<!--店铺展示-->
+<div class="bg-white mt10" id="jgcase">
+	<div class="box-head" id="jgcase-head">
+		<h2>商家店铺展示　　　　　　　　　　　　<span id="my_more">更多>></span></h2>
+
+	</div>
+	<div  class="am-slider am-slider-panel" id="jgcase-items">
+    
+	</div>
+</div>
+<script type="text/javascript">
+	$("#my_more").click(function(){
+		 window.location.href="<{:U('shoplist/index')}>";
+	})
+</script>
+
+
+
+<!--商家店铺-->
+<foreach name="shop" item="myshop">
+<div class="my_shop">
+	<div class="my_img">
+		<a href="<{:U('shopdetails/index',array('shop_id'=>$myshop['shop_id']))}>"><img src="__ROOT__/attachs/<{$myshop.logo}>" alt="店铺logo" ></a>
+	</div>
+	<div class="my_right">
+		<a href="<{:U('shopdetails/index',array('shop_id'=>$myshop['shop_id']))}>"><h2 style="color:#FF6700;font-size:18px;line-height:21px;"><{$myshop.shop_name}></h2></a>
+		<p class="my_p">电话：<{$myshop.tel}></p>
+		<p class="my_p">地址：<{$myshop.addr}></p>
+		<p class="my_p">已售：222</p>
+	</div>
+</div>
+</foreach>
+
+
+
+
+
+
+
+<!--承诺-->
+<div class="wp bg-white mt10" id="committed">
+	<div id="committed-head">
+		<i class="icon-committed"></i>
+	</div>
+	<div id="committed-items">
+		<a href=""><i class="icon-free"></i><p>免费报价</p></a>
+		<a href=""><i class="icon-volume"></i><p>预约量房</p></a>
+		<a href=""><i class="icon-service"></i><p>维修中心</p></a>
+		<a href="" class="committed-phone"><i class="icon-phone"></i><p>24小时<br/>售后热线</p></a>
+		<div class="am-cf"></div>
+	</div>
+</div>
+
+<!--底部-->
+<div  id="footbox">
+	<div id="footbox-warp">
+	<a href="<{:U('index/index')}>" class="active">
+		<i class="icon-home"></i>
+		<p>首页</p>
+	</a>
+	<a href="javascript:alert('正在开发中')">
+		<i class="icon-bbs"></i>
+		<p>社区论坛</p>
+	</a>
+	<a href="javascript:alert('正在开发中')">
+		<i class="icon-ask"></i>
+		<p>问大家</p>
+	</a>
+	<a href="<{:U('mall/cart')}>">
+		<i class="icon-cart"></i>
+		<p>购物车</p>
+	</a>
+	<a href="<{:U('mcenter/index/index')}>">
+		<i class="icon-my"></i>
+		<p>我的</p>
+	</a>
+	<div class="am-cf"></div>
+	</div>
+</div>
+
+
+<include file='public:footer_new'/>   
+<script src="__TMPL__assets/static/js/index.js?v=<?=time()?>"></script>

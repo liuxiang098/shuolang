@@ -1,0 +1,112 @@
+<include file="public:header"/>
+<style>
+	.item-list h5 {height: inherit;}
+	.my_shop{
+			width:100%;
+			height:88px;
+			margin-bottom:1px;
+			/*background-color:pink;*/
+			/*position:relative;*/
+		}
+	.my_img{
+		width:80px;
+		height:80px;
+		margin-left:4px;
+		/*position:absolute;*/
+		/*top:4px;*/
+		float:left;
+		margin-top: 4px;
+	}
+	.my_right{
+		width:71%;
+		height:88px;
+		/*background-color:green;*/
+		float:left;
+		margin-left: 4px;
+	}
+	.my_p{
+		line-height:6px;
+		color:#999;
+		font-size: 13px;
+	}
+	#gengduo{
+		color::#FF6700;
+	}
+</style>
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('building/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			店铺列表
+		</div>
+		<div class="top-search" style="display:none;">
+			<form method="post" action="<{:U('shoplist/index')}>">
+				<input name="shopname" placeholder="输入店铺的关键字"  />
+				<button type="submit" class="icon-search"></button> 
+			</form>
+		</div>
+		<div class="top-signed">
+			<a id="search-btn" href="javascript:void(0);"><i class="icon-search"></i></a>
+		</div>
+	</header>
+    <script>
+		$(function(){
+			$("#search-btn").click(function(){
+				if($(".top-search").css("display")=='block'){
+					$(".top-search").hide();
+					$(".top-title").show(200);
+				}
+				else{
+					$(".top-search").show();
+					$(".top-title").hide(200);
+				}
+			});
+			$("#search-bar li").each(function(e){
+				$(this).click(function(){
+					if($(this).hasClass("on")){
+						$(this).parent().find("li").removeClass("on");
+						$(this).removeClass("on");
+						$(".serch-bar-mask").hide();
+					}
+					else{
+						$(this).parent().find("li").removeClass("on");
+						$(this).addClass("on");
+						$(".serch-bar-mask").show();
+					}
+					$(".serch-bar-mask .serch-bar-mask-list").each(function(i){
+						
+						if(e==i){
+							$(this).parent().find(".serch-bar-mask-list").hide();
+							$(this).show();
+						}
+						else{
+							$(this).hide();
+						}
+						$(this).find("li").click(function(){
+							$(this).parent().find("li").removeClass("on");
+							$(this).addClass("on");
+						});
+					});
+				});
+			});
+		});
+	</script>
+
+		<foreach name="shop" item="myshop">
+			<div class="my_shop">
+				<div class="my_img">
+					<a href="<{:U('shopdetails/index',array('shop_id'=>$myshop['shop_id']))}>"><img src="__ROOT__/attachs/<{$myshop.logo}>" alt="店铺logo" width="100%" height="100%" ></a>
+				</div>
+				<div class="my_right">
+					<a href="<{:U('shopdetails/index',array('shop_id'=>$myshop['shop_id']))}>"><h2 style="color:#FF6700;font-size:18px;line-height:21px;margin-bottom:8px;"><{$myshop.shop_name}></h2></a>
+					<p class="my_p">电话：<{$myshop.tel}></p>
+					<p class="my_p">地址：<{$myshop.addr}></p>
+					<p class="my_p">已售：222</p>
+				</div>
+			</div>
+		</foreach>
+
+	
+	
+<include  file='public:footer'/>    

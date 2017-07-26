@@ -1,0 +1,73 @@
+/* ::::: http://www6.53kf.com/style/chat/minichat2/css/base.css?20070202 ::::: */
+
+.text-l { text-align: left; }
+a:link { text-decoration: none; color: rgb(0, 0, 206); }
+a:visited { text-decoration: none; color: rgb(0, 0, 206); }
+a:hover { text-decoration: underline; color: rgb(255, 102, 0); }
+a:active { text-decoration: none; color: rgb(255, 153, 0); }
+/* ::::: http://www6.53kf.com/style/chat/minichat2/css/minichat.css?20150127 ::::: */
+
+body { width: 100%; height: auto; text-align: center; margin: 0px; padding: 0px; }
+ul { margin: 0px; padding: 0px; }
+HTML { overflow: hidden; }
+img { border: 0px none; }
+#body { font-size: 12px; margin: 0px auto; font-family: tahoma; width: 398px; height: 340px; border: 1px solid rgb(82, 156, 227); text-align: center; overflow: hidden; }
+#table { position: relative; width: 398px; height: 341px; text-align: center; }
+#part_main { position: absolute; top: 0px; left: 0px; width: 398px; height: 340px; overflow: hidden; }
+.part_leaveword { position: absolute; top: 0px; left: 0px; width: 398px; height: 345px; z-index: 1; }
+.leaveword_clue { position: absolute; top: 0px; left: 0px; height: 26px; width: 398px; background: transparent url('../image/dialog_clue_bg.gif') repeat-x scroll 0% 0%; text-align: left; }
+.leaveword_clue span { color: rgb(23, 67, 152); line-height: 26px; margin-left: 10px; }
+.leaveword_content { position: absolute; top: 0px; left: 0px; width: 398px; height: 340px; background: rgb(255, 255, 255) url('../image/dialog_content_bg2.gif') no-repeat scroll 100% 100%; text-align: center; overflow-y: auto; overflow-x: hidden; }
+.leaveword_msg { margin: 10px auto 0px; width: 90%; height: auto; color: rgb(23, 67, 152); line-height: 20px; text-align: left; }
+.part_dialog { position: absolute; top: 0px; left: 0px; width: 400px; height: 237px; z-index: 0; }
+.dialog_clue { position: absolute; top: 0px; left: 0px; width: 400px; height: 28px; line-height: 28px; color: rgb(0, 0, 206); background: transparent url('minichat.css') repeat-x scroll 0px -98px; margin: 0px; text-align: left; overflow: hidden; }
+.dialog_clue span { color: rgb(23, 67, 152); line-height: 26px; margin-left: 10px; }
+.dialog_clue2 { position: absolute; top: 30px; left: 0px; width: 398px; height: 7px; line-height: 7px; color: rgb(0, 0, 206); margin: 0px; text-align: left; overflow: hidden; }
+#l-ts-wd { float: left; color: rgb(23, 67, 152); width: 302px; line-height: 28px; }
+.right_border {  }
+#l-ts-close { width: 68px; height: 25px; border: 0px none; float: right; margin: 1px 5px 0px 0px; }
+.btn_purple { width: 68px; height: 25px; border: 0px none; float: right; cursor: pointer; }
+.dialog_content_bg { position: absolute; top: 30px; left: 0px; width: 398px; height: 206px; background: transparent url('minichat.css') repeat-x scroll 0% 0%; z-index: -1; }
+.dialog_content_bg2 { width: 100%; height: 100%; z-index: -1; }
+.dialog_content { position: absolute; top: 30px; left: 0px; width: 393px; height: 202px; overflow-wrap: break-word; word-break: break-all; font-size: 12px; padding-left: 5px; padding-top: 5px; text-align: left; display: block; overflow: auto; }
+.part_buttons { position: absolute; top: 233px; left: 0px; width: 100%; height: 28px; padding: 2px 0px 0px 4px; background: transparent url('minichat.css') repeat-x scroll 0px -65px; margin: 0px; text-align: left; z-index: -1; overflow: hidden; }
+.part_input { position: absolute; top: 269px; left: 6px; width: 386px; height: 70px; z-index: -1; }
+.part_input_content { position: relative; float: left; margin-left: 2px; width: 381px; height: 63px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.part_input textarea { position: absolute; top: 0px; left: 0px; height: 61px; width: 265px; overflow: auto; font-size: 12px; border: 0px none; overflow-wrap: break-word; word-break: break-all; }
+.part_input .chatmini_btns { width: 101px; height: 42px; line-height: 42px; position: absolute; top: 11px; right: 0px; background: transparent url('minichat.css') repeat scroll 0px -21px; }
+.part_input .chatmini_btns .chatmini_btns_s { width: 60px; text-align: center; font-size: 13px; cursor: pointer; display: block; float: left; font-weight: bold; margin-left: 5px; color: rgb(255, 255, 255); }
+.part_input .chatmini_btns .chatmini_btns_p { width: 35px; cursor: pointer; display: block; float: left; }
+.part_input #clue { position: absolute; left: 0px; bottom: 0px; text-align: left; width: 90%; height: 18px; line-height: 18px; text-indent: 12px; z-index: 11111; }
+#flashbox { position: absolute; width: 670px; padding: 0px; margin: 0px; height: auto; left: 145px; top: 127px; }
+.ornament_2 { position: absolute; top: 28px; left: 0px; width: 100%; font-size: 1px; height: 1px; line-height: 1px; border-bottom: 1px solid rgb(0, 154, 194); }
+#uploaddiv { position: absolute; height: 80px; width: 360px; top: 153px; left: 12px; z-index: 100; overflow: hidden; }
+#face_div { position: absolute; left: 4px; top: 16px; width: 302px; height: 214px; z-index: 111; }
+.press_top { position: absolute; top: 290px; left: 225px; height: 48px; width: 137px; }
+#pressdiv { height: 48px; width: 137px; left: -20px; z-index: 100; color: rgb(0, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(139, 164, 203); }
+.pressdiv-line-left { float: left; clear: left; height: 22px; width: 20px; }
+.pressdiv-line-right { font-size: 12px; float: right; clear: right; padding-top: 5px; width: 115px; cursor: pointer; height: 17px; }
+.pressdiv-line { border: 1px solid rgb(255, 255, 255); cursor: pointer; float: left; clear: both; height: 22px; width: 135px; }
+.pkselect { background: transparent url('../image/pk-select.gif') no-repeat scroll 30% 45%; }
+#send_tips { width: 152px; height: 56px; background: transparent url('../image/tips_bg.gif') repeat scroll 0% 0%; position: absolute; top: 270px; left: 135px; z-index: 999; }
+.dialog_content p { margin: 1px 0px 0px; font-family: arial,宋体; font-size: 12px; font-weight: normal; padding-left: 10px; line-height: 21px; }
+.wkbutton_1, .wkbutton_2, .wkbutton_3, .wkbutton_4, .wkbutton_5, .wkbutton_6, .wkbutton_7, .wkbutton_8 { margin-right: 5px; float: left; height: 25px; background-image: url('../image/xin_par_bg.png'); background-repeat: no-repeat; cursor: pointer; width: 24px; }
+.wkbutton_1:hover, .wkbutton_2:hover, .wkbutton_3:hover, .wkbutton_4:hover, .wkbutton_5:hover, .wkbutton_6:hover, .wkbutton_7:hover, .wkbutton_8:hover { background-image: url('../image/xin_par_bgm.png'); }
+.wkbutton_1 { background-position: 0px 0px; }
+.wkbutton_2 { background-position: -24px 0px; }
+.wkbutton_3 { background-position: -48px 0px; }
+.wkbutton_4 { background-position: -72px 0px; }
+.wkbutton_5 { background-position: -96px 0px; }
+.wkbutton_6 { background-position: -120px 0px; }
+.wkbutton_7 { background-position: -144px 0px; }
+.wkbutton_8 { background-position: -168px 0px; }
+/* ::::: http://www6.53kf.com/css/code.css ::::: */
+
+*::-moz-selection { background: rgb(252, 75, 75) none repeat scroll 0% 0%; }
+.kefu { text-align: left; margin-bottom: 20px; margin-right: 60px; overflow: hidden; }
+.kefu p { padding-left: 0px; }
+.kefu .chat_word { background: rgb(241, 248, 249) none repeat scroll 0% 0%; line-height: 1.2; margin: 0px; text-align: left; padding: 5px 10px; border-radius: 5px; float: left; }
+.kefu .g-arrows { margin: 0px; padding: 0px; display: block; }
+.kefu .g-arrows img { margin-left: 8px; }
+.dialog_content { overflow: auto; }
+#robot_input_tips { z-index: 1000; position: absolute; cursor: pointer; padding: 10px 0px; bottom: 85px; left: 20px; background-color: rgb(255, 255, 255); border: 1px solid rgb(111, 144, 202); word-break: break-all; overflow-wrap: break-word; }
+#new_box-main-l-disp { font: 12px "Microsoft Yahei",simsun,sans-serif; color: rgb(51, 51, 51); }

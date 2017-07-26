@@ -1,0 +1,37 @@
+<!--底部-->
+<div  id="footbox">
+	<div id="footbox-warp">
+	<a href="<{:U('index/index')}>" class="active">
+		<i class="icon-home"></i>
+		<p>首页</p>
+	</a>
+	<a href="<{:U('booking/index')}>" class="mykf">
+		<i class="icon-bbs" ></i>
+		<p>社区论坛</p>
+	</a>
+	<a href="<{:U('booking/index')}>">
+		<i class="icon-ask"></i>
+		<p>问大家</p>
+	</a>
+	<a href="<{:U('mall/cart')}>">
+		<i class="icon-cart"></i>
+		<p>购物车</p>
+	</a>
+	<a href="<{:U('mcenter/index/index')}>">
+		<i class="icon-my"></i>
+		<p>我的</p>
+	</a>
+	<div class="am-cf"></div>
+	</div>
+</div>
+<include  file='public:mui'/> 		
+<script src="__TMPL__assets/static/plugin/amazeui/js/amazeui.min.js"></script>
+<script src="__TMPL__assets/static/plugin/layui/layui.js"></script>
+<script src="__TMPL__assets/static/plugin/lazyload/jquery.lazyload.min.js"></script>
+<script src="__TMPL__assets/static/js/wap.js?v=<?=time()?>"></script>
+<script src="__TMPL__assets/static/js/index.js?v=<?=time()?>"></script>
+<script type="text/javascript">
+	$(".mykf").click(function(){
+		alter('正在开发中。。。敬请期待');
+	})
+</script>

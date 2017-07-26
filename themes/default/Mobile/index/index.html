@@ -1,0 +1,325 @@
+<include file='public:header_new'/>   
+<link rel="stylesheet" href="__TMPL__assets/static/css/index.css?v=<?=time()?>">
+
+<!--返回顶部-->
+
+
+
+
+<!--幻灯-->
+<div class="am-slider am-slider-default" id="indexbanner">
+  <ul class="am-slides">
+	<foreach name="ad_57" item="r" key="k"> 
+    <li><a href="<{$r[link_url]}>"><img class="lazy" data-original="<{:config_img($r[photo])}>" /></a></li>
+	</foreach>
+  </ul>
+</div>
+<!--九宫格-->
+<div class="wp bg-white" id="jiugong">
+	<foreach name="nav" item="r" key="k"> 
+	<a href="<{$r.url}>"><i class="icon-cate-<{$k+1}>"></i><p><{$r.nav_name}></p></a>
+	</foreach>
+	<!-- <a href="<{:U('page/index')}>"><i class="icon-cate-10"></i><p>更多</p></a> -->
+	<a href=""><i class="icon-cate-10"></i><p>更多</p></a>
+	<div class="am-cf"></div>
+</div>
+<!--今日推送-->
+<div class="wp" id="daypush">
+	<{$ad_187}>
+</div>
+<!--box1-->
+<!--四格广告-->
+<div class="wp bg-white mt10" id="box1">
+	<{$ad_188}>
+	<div class="am-cf"></div>
+</div>
+
+<div class="wp bg-white mt10" id="video">
+	<div id="video-head">
+		<i class="icon-videologo"></i>
+		视频展示
+		<a href="" class="am-fr text-gray">更多></a>
+	</div>
+	<div id="video-items">
+		<foreach name="video_items" item="r" key="k"> 
+		<div class="video-item">
+			<a href="<{$r[video_url]}>" class="video-thumb">
+				<img class="lazy" data-original="<{:config_img($r[photo])}>">
+				<i class="icon-play"></i>
+				<span><{$r[time]}></span>
+			</a>
+			<a href="" class="video-title">
+				<{$r[title]}>
+			</a>
+		</div>
+		</foreach>
+		<div class="am-cf"></div>
+	</div>
+</div>
+
+<div class="wp mt10" id="zhibo">
+	<div id="zhibo-head">
+		<i class="icon-video"></i>
+		工地在线直播
+		<a href="" class="am-fr text-gray">更多></a>
+	</div>
+	<div  class="am-slider am-slider-default" id="zhibo-items">
+    <ul class="am-slides">
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class=""></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class="am-cf"></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class=""></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class="am-cf"></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class="am-cf"></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class="am-cf"></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="zhibo-item">
+		<a href="" class="zhibo-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/index/zhibo/1.jpg?3">
+		<div class="zhibo-state">
+		<i class="icon-dot"></i>直播中
+		</div>
+		</a>
+		<a href="" class="zhibo-title">牧龙源野</a>
+		<div class="am-cf"></div>
+		<a href="" class="zhibo-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+	</ul>
+	</div>
+</div>
+
+<!--box2-->
+<div class="bg-white mt10" id="box2-1">
+	<div class="box2-head">
+		<i class="icon-guo"></i>
+		硕琅果园
+		<a href="<{:U('mall/index', array('cat' => 1))}>" class="am-fr text-gray">更多></a>
+	</div>
+	<foreach name="goods_1" item="r" key="k"> 
+	<div class="box2-item" id="box2-item-1">
+		<div class="box2-thumb">
+			<a href="<{:U('mall/detail', array('goods_id' => $r['goods_id']))}>"><img class="lazy" data-original="<{:config_img($r[photo])}>"></a>
+		</div>
+		<div class="box2-price">
+			<a href="">￥<{$r[price]}>元</a>
+		</div>
+	</div>
+	</foreach>
+	<div class="am-cf"></div>
+</div>
+<!--box2-->
+<div class="bg-white mt10" id="box2-2">
+	<div class="box2-head">
+		<i class="icon-shop"></i>
+		硕琅e家社区便利店
+		<a href="<{:U('mall/index', array('cat' => 15))}>" class="am-fr text-gray">更多></a>
+	</div>
+	<foreach name="goods_15" item="r" key="k"> 
+	<div class="box2-item" id="box2-item-1">
+		<div class="box2-thumb">
+			<a href="<{:U('mall/detail', array('goods_id' => $r['goods_id']))}>"><img class="lazy" data-original="<{:config_img($r[photo])}>"></a>
+		</div>
+		<div class="box2-price">
+			<a href="">￥<{$r[price]}>元</a>
+		</div>
+	</div>
+	</foreach>
+	<div class="am-cf"></div>
+</div>
+<!--box2-->
+<div class="bg-white mt10" id="box2-3">
+	<div class="box2-head">
+		<i class="icon-tree"></i>
+		硕琅e家生态绿色食材
+		<a href="<{:U('mall/index', array('cat' => 18))}>" class="am-fr text-gray">更多></a>
+	</div>
+	<foreach name="goods_18" item="r" key="k"> 
+	<div class="box2-item" id="box2-item-1">
+		<div class="box2-thumb">
+			<a href="<{:U('mall/detail', array('goods_id' => $r['goods_id']))}>"><img class="lazy" data-original="<{:config_img($r[photo])}>"></a>
+		</div>
+		<div class="box2-price">
+			<a href="">￥<{$r[price]}>元</a>
+		</div>
+	</div>
+	</foreach>
+	<div class="am-cf"></div>
+</div>
+<!--box3-->
+<div class="bg-white mt10" id="box3-1">
+	<div class="box3-head">
+		<i class="icon-house"></i>
+		特别推荐出租房源信息
+		<a href="" class="am-fr text-gray">更多></a>
+	</div>
+	<div class="wp box3-item flex-box">
+		<div class="am-fl box3-thumb">
+			<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2"></a>
+		</div>
+		<div class="am-fl box3-info flex-item">
+			<a href=""><h2>南京铁心桥蓝岸3G1室1厅一卫</h2>
+			<div class="box3-desc">
+			雨花台 - 铁心桥 - 30平米
+			</div>
+			<div class="box3-text">
+				<span class="am-fl text1">1600元/月</span>
+				<span class="am-fr text2">押一付三</span>
+			</div>
+			</a>
+		</div>
+		<div class="am-cf"></div>
+	</div>
+	<div class="wp box3-item flex-box">
+		<div class="am-fl box3-thumb">
+			<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/index/house/2.jpg?2"></a>
+		</div>
+		<div class="am-fl box3-info flex-item">
+			<a href=""><h2>南京铁心桥蓝岸3G1室1厅一卫</h2>
+			<div class="box3-desc">
+			雨花台 - 铁心桥 - 30平米
+			</div>
+			<div class="box3-text">
+				<span class="am-fl text1">1600元/月</span>
+				<span class="am-fr text2">押一付三</span>
+			</div>
+			</a>
+		</div>
+		<div class="am-cf"></div>
+	</div>
+	
+</div>
+<!--box3-->
+<div class="bg-white mt10" id="box3-2">
+	<div class="box3-head">
+		<i class="icon-special"></i>
+		特价二手房
+		<a href="" class="am-fr text-gray">更多></a>
+	</div>
+	<div class="wp box3-item flex-box">
+		<div class="am-fl box3-thumb">
+			<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2"></a>
+		</div>
+		<div class="am-fl box3-info flex-item">
+			<a href=""><h2>南京铁心桥蓝岸3G1室1厅一卫</h2>
+			<div class="box3-desc">
+			雨花台 - 铁心桥 - 30平米
+			</div>
+			<div class="box3-text">
+				<span class="am-fr text1">245万</span>
+			</div>
+			</a>
+		</div>
+		<div class="am-cf"></div>
+	</div>
+	<div class="wp box3-item flex-box">
+		<div class="am-fl box3-thumb">
+			<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/index/house/2.jpg?2"></a>
+		</div>
+		<div class="am-fl box3-info flex-item">
+			<a href=""><h2>南京铁心桥蓝岸3G1室1厅一卫</h2>
+			<div class="box3-desc">
+			雨花台 - 铁心桥 - 30平米
+			</div>
+			<div class="box3-text">
+				<span class="am-fr text1">120万</span>
+			</div>
+			</a>
+		</div>
+		<div class="am-cf"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	//测试返回2
+		Button.setOnClickListener(mGoBack);
+		public OnClickListener mGoBack = new OnClickListener() {
+
+		    public void onClick(View v) {
+		        finish();
+		    }
+		}
+</script>
+
+
+
+<!--底部-->
+<include file='public:footer_my'/>

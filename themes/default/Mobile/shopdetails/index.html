@@ -1,0 +1,285 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>硕琅</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="__TMPL__assets/i/app-icon72x72@2x.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="__TMPL__assets/i/app-icon72x72@2x.png">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="__TMPL__assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+  <link rel="stylesheet" href="__TMPL__assets/static/plugin/amazeui/css/amazeui.min.css">
+  <link rel="stylesheet" href="__TMPL__assets/static/plugin/layui/css/layui.css">
+  <link rel="stylesheet" href="__TMPL__assets/static/css/special.css">
+  <link rel="stylesheet" href="__TMPL__assets/static/css/shopdetails-app.css?v=<?=time()?>">
+  <link rel="stylesheet" href="__TMPL__assets/static/css/index.css?v=<?=time()?>">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="__TMPL__assets/static/plugin/amazeui/js/jquery.min.js"></script>
+<script src="__TMPL__assets/static/js/jquery-1.6.2.min.js"></script>
+</head>
+<body>
+<div id="warpmain">
+<!--顶部-->
+<div class="flex-box wp" id="topbox">
+	<div class="fl" id="scan">
+		<li><i class="icon-scan"></i></li>
+	</div>
+	<div class="flex-item" id="searchbox">
+		<div class="flex-box" id="searchbox-warp">
+		<li><i class="icon-seach"></i></li>
+		<li class="flex-item"><input type="text" value="硕琅装饰"></li>
+		</div>
+	</div>
+	<div class="fl" id="message">
+		<li><i class="icon-message"></i></li>
+		<li style="margin-right: 50px;">消息</li>
+	</div>
+</div>
+
+<link rel="stylesheet" href="__TMPL__assets/static/css/shopdetails.css?v=<?=time()?>"> 
+
+<div class="tit">
+  <div class="tit-1 fl">
+    <a href="">店铺首页</a>
+    <hr>
+  </div>
+  <div class="tit-1 fl">
+    <a href="">全部宝贝</a>
+    <hr>
+  </div>
+  <div class="tit-1 fl">
+    <a href="">新品上架</a>
+    <hr>
+  </div>
+  <div class="tit-1 fl">
+    <a href="">微淘动态</a>
+    <hr>
+  </div>
+</div>
+<div class="titl">
+  <div>
+    <p style="margin-left: 10px;font-size: 35px;"><b>排行榜</b></p>
+  </div>
+</div>
+<div class="tit">
+  <div class="tit-2 fl">
+    <a href="">钻石卖家最爱</a>
+    <hr>
+  </div>
+  <div class="tit-2 fl">
+    <a href="">收藏排行</a>
+    <hr>
+  </div>
+  <div class="tit-2 fl">
+    <a href="">销量排行</a>
+    <hr>
+  </div>
+</div>
+<div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg-white mt10" id="box3-2">
+  <div class="wp box3-item flex-box">
+    <div class="am-fl box3-thumb">
+      <a href=""><img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2" style="width: 423px;height: 423px;"></a>
+    </div>
+    <div class="am-fl box3-info flex-item">
+      <a href="">
+      <div class="box3-desc">
+        <img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2" style="width: 170px;height: 192px;margin-top: -10px;">
+      </div>
+      <div class="box3-text">
+        <img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2" style="width: 170px;height: 192px;margin-top: 162px;">
+      </div>
+      </a>
+    </div>
+    <div class="am-cf"></div>
+  </div>
+</div>
+
+<!--box3-->
+<div class="bg-white mt10" id="box3-2">
+  <div class="box3-head">
+    热销宝贝
+  </div>
+  <div class="wp box3-item flex-box">
+  <foreach name="shop" item="goods">
+    <div class="am-fl box3-thumb">
+      <a href="">
+        <img class="lazy" data-original="__ROOT__/attachs/<{$goods.photo}>" style="width: 295px;height: 400px;">
+        <span><{$goods.title}></span><br>
+        <span style="color: red;margin-left: -80px;">¥<{$goods.is_agent_price}></span>
+        <span style="text-decoration: line-through;font-size: 24px;">¥<{$goods.price}></span>
+      </a>
+    </div>
+  </foreach>
+<!--     <div class="am-fl box3-info flex-item">
+      <a href="">
+        <img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2" style="width: 295px;height: 400px;">
+        <span>水晶冰裂石材玻璃镜面</span><br>
+        <span style="color: red;">¥140.00</span>
+        <span style="text-decoration: line-through;font-size: 24px;">¥150.00</span>
+      </a>
+    </div> -->
+    <div class="am-cf"></div>
+  </div>
+</div>
+
+
+
+
+<!--box3-->
+<div class="bg-white mt10" id="box3-2">
+  <div class="box3-head">
+    猜你喜欢
+  </div>
+  <div class="wp box3-item flex-box">
+    <div class="am-fl box3-thumb">
+      <a href="">
+        <img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2" style="width: 295px;height: 400px;">
+        <span>水晶冰裂石材玻璃镜面</span><br>
+        <span style="color: red;margin-left: -80px;">¥140.00</span>
+        <span style="text-decoration: line-through;font-size: 24px;">¥150.00</span>
+      </a>
+    </div>
+    <div class="am-fl box3-info flex-item">
+      <a href="">
+        <img class="lazy" data-original="__TMPL__assets/static/image/index/house/1.jpg?2" style="width: 295px;height: 400px;">
+        <span>水晶冰裂石材玻璃镜面</span><br>
+        <span style="color: red;">¥140.00</span>
+        <span style="text-decoration: line-through;font-size: 24px;">¥150.00</span>
+      </a>
+    </div>
+    <div class="am-cf"></div>
+  </div>
+</div>
+
+<div>
+  <a href=""><span style="margin-left: 230px;">查看所有宝贝</span></a>
+</div>
+
+<script type="text/javascript">
+  //测试返回2
+    Button.setOnClickListener(mGoBack);
+    public OnClickListener mGoBack = new OnClickListener() {
+
+        public void onClick(View v) {
+            finish();
+        }
+    }
+</script>
+
+<!--返回顶部-->
+<div id="scrollTop" >
+    <div class="level-2"></div>
+    <div class="level-3"></div>
+</div>
+<script src="__TMPL__assets/static/js/mumayi_top.js"></script>
+
+<!--底部-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  id="footbox">
+  <div id="footbox-warp">
+  <a href="<{:U('index/index')}>" class="active">
+    <i class="icon-home"></i>
+    <p>首页</p>
+  </a>
+  <a href="<{:U('booking/index')}>" class="mykf">
+    <i class="icon-bbs" ></i>
+    <p>社区论坛</p>
+  </a>
+  <a href="<{:U('booking/index')}>">
+    <i class="icon-ask"></i>
+    <p>问大家</p>
+  </a>
+  <a href="<{:U('mall/cart')}>">
+    <i class="icon-cart"></i>
+    <p>购物车</p>
+  </a>
+  <a href="<{:U('mcenter/index/index')}>">
+    <i class="icon-my"></i>
+    <p>我的</p>
+  </a>
+  <div class="am-cf"></div>
+  </div>
+</div>
+<include  file='public:mui'/>     
+<script src="__TMPL__assets/static/plugin/amazeui/js/amazeui.min.js"></script>
+<script src="__TMPL__assets/static/plugin/layui/layui.js"></script>
+<script src="__TMPL__assets/static/plugin/lazyload/jquery.lazyload.min.js"></script>
+<script src="__TMPL__assets/static/js/wap.js?v=<?=time()?>"></script>
+<script src="__TMPL__assets/static/js/index.js?v=<?=time()?>"></script>
+<script type="text/javascript">
+  $(".mykf").click(function(){
+    alter('正在开发中。。。敬请期待');
+  })
+</script>

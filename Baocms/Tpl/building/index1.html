@@ -1,0 +1,69 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">建材</li>
+        <li class="li2">建材分类</li>
+        <li class="li2 li3">分类列表</li>
+    </ul>
+</div>
+<div class="main-jsgl"> 
+    <p class="attention"><span>注意：</span>由于没有建材表，用别的数据代替一下</p>
+    <div class="jsglNr">
+        <div class="selectNr">
+            <div class="left">
+                <{:BA('admin/create','','添加管理员','load','',500,450)}>
+            </div>
+            <div class="right">
+                <form method="post" action="<{:U('admin/index')}>">
+                    <input type="text"  class="inptText" name="keyword" value="<{$keyword}>"  /><input type="submit" value="   搜索"  class="inptButton" />
+                </form>
+            </div>
+        </div>
+        <form target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+                        <td class="w50">ID</td>
+                        <td>建材ID</td>
+                        <td>商家</td>
+                        <td>建材名称</td>
+                        <td>建材图片</td>
+                        <td>URL</td>
+                        <td>价格</td>
+                        <td>数量</td>
+                        <td>点击量</td>
+                        <td>库存量</td>
+                        <td>状态</td>
+                        <td>生产地</td>
+                        <td>创建日期</td>
+                        <td>操作</td>   
+                    </tr>
+                    <foreach name="list" item="var">
+                        <tr>
+                            <td><{$var.building_id}></td>
+                            <td><{$var.shop_name}></td>
+                            <td><{$var.building_name}></td>
+                            <td><{$var.building_img}></td>
+                            <td><{$var.building_url}></td>
+                            <td><{$var.building_price}></td>
+                            <td><{$var.building_num}></td>
+                            <td><{$var.building_clicknum}></td>
+                            <td><{$var.building_store}></td>
+                            <td><{$var.building_state}></td>
+                            <td><{$var.building_company}></td>
+                            <td><{$var.building_addtime|date="Y-m-d H:i:s",###}></td>
+                            <td>
+                                <{:BA('building/edit',array("admin_id"=>$var["admin_id"]),'编辑','load','remberBtn',500,450)}>
+                                <{:BA('building/delete',array("admin_id"=>$var["admin_id"]),'删除','act','remberBtn')}>
+                            </td>
+                        </tr>
+                    </foreach>
+
+                </table>
+                <{$page}>
+            </div>
+        </form>
+
+    </div>
+</div>
+<include  file='public:footer'/>       

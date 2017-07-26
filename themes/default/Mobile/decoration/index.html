@@ -1,0 +1,513 @@
+<include file='public:header_new'/>   
+<link rel="stylesheet" href="__TMPL__assets/static/css/page.css?v=<?=time()?>">
+<div id="pagebanner">
+<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/banner.jpg"></a>
+</div>
+<!--九宫格-->
+<div class="wp bg-white" id="jiugong">
+	<foreach name="cate" item="r" key="k"> 
+	<a href="<{:U('shop/index', array('cat' => $r['cate_id']))}>"><i class="icon-cate-<{$k+1}>"></i><p><{$r.cate_name}></p></a>
+	</foreach>
+	<!-- <a href="<{:U('page/index')}>"><i class="icon-cate-10"></i><p>更多</p></a> -->
+	<a href=""><i class="icon-cate-10"></i><p>更多</p></a>
+	<div class="am-cf"></div>
+</div>
+<!--九宫格 文字-->
+<div class="wp bg-white" id="jiugong-test">
+	<foreach name="nav" item="r" key="k"> 
+	<!-- <a href="<{$r.url}>" class="jiugong-text-<if condition="$k elt 2">1<elseif condition="$k elt 5 && $k egt 3"/>2<else/>3</if>"><button style="border-radius:50px;border-color:red;width: 180px;height: 60px;background-color: white";><{$r.nav_name}></button></a> -->
+	<a href="<{$r.url}>" class="jiugong-text-<if condition="$k elt 2">1<elseif condition="$k elt 5 && $k egt 3"/>2<else/>3</if>"><button class="button_my"><{$r.nav_name}></button></a>
+	</foreach>
+	<div class="am-cf"></div>
+</div>
+<!--竣工案例-->
+<div class="bg-white mt10" id="jgcase">
+	<div class="box-head" id="jgcase-head">
+		<h2>竣工案例展示</h2>
+	</div>
+	<div  class="am-slider am-slider-panel" id="jgcase-items">
+    <ul class="am-slides">
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/page/jgcase/1.jpg?3">
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/page/jgcase/2.jpg?3">
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/page/jgcase/3.jpg?3">
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/page/jgcase/1.jpg?3">
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+		<img class="lazy" data-original="__TMPL__assets/static/image/page/jgcase/2.jpg?3">
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">1栋1单元101室</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+	</ul>
+	</div>
+</div>
+
+<!--设计案例-->
+<div class="bg-white mt10" id="sjcase">
+	<div class="box-head" id="sjcase-head">
+		<h2>设计案例</h2>
+	</div>
+	<div class="box-head2">
+		VR效果图展示
+	</div>
+	<div  class="am-slider am-slider-panel" id="vr-items">
+    <ul class="am-slides">
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/vr/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：张涛</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/vr/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：顾浩</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/vr/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：李铭</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/vr/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：张慧</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/vr/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：程丰原</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+	</ul>
+	</div>
+	<div class="box-head2">
+		平面效果图展示
+	</div>
+	<div  class="am-slider am-slider-panel" id="pm-items">
+    <ul class="am-slides">
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/pm/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：张涛</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/pm/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：顾浩</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/pm/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：李铭</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/pm/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：张慧</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+		<li>
+		<div class="panel-item">
+		<a href="" class="panel-thumb">
+			<img class="lazy" data-original="__TMPL__assets/static/image/page/pm/1.jpg?3">
+			<i class="icon-vr"></i>
+		</a>
+		<a href="" class="jgcase-title">牧龙源墅</a><br/>
+		<a href="" class="panel-add">设计师：程丰原</a>
+		</div>
+		<div class="am-cf"></div>
+		</li>
+	</ul>
+	</div>
+</div>
+<!--ad-->
+<div class="bg-white mt10">
+<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/ad/1.jpg"></a>
+</div>
+<!--设计师推荐-->
+<div class="bg-white mt10" id="designer">
+	<div class="box-head">
+		<h2>设计师推荐</h2>
+	</div>
+	<div class="wp memberlist">
+		<!-- <foreach name="video_items" item="r" key="k"> 
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				张涛
+				<span>130人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计总监
+			</div>
+		</li>
+		</foreach> -->
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				欧阳郝成
+				<span>80人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计师
+			</div>
+		</li>
+		<div class="am-cf"></div>
+	</div>
+</div>
+<!--ad-->
+<div class="bg-white mt10">
+<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/ad/2.jpg"></a>
+</div>
+<!--水电工推荐-->
+<div class="bg-white mt10" id="designer">
+	<div class="box-head">
+		<h2>水电工推荐</h2>
+	</div>
+	<div class="wp memberlist">
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				张涛
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计总监
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				李泽鸿
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				首席设计师
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				欧阳郝成
+				<span>80人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计师
+			</div>
+		</li>
+		<div class="am-cf"></div>
+	</div>
+</div>
+<!--贴砖瓦工推荐-->
+<div class="bg-white mt10" id="designer">
+	<div class="box-head">
+		<h2>贴砖瓦工推荐</h2>
+	</div>
+	<div class="wp memberlist">
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				张涛
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计总监
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				李泽鸿
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				首席设计师
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				欧阳郝成
+				<span>80人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计师
+			</div>
+		</li>
+		<div class="am-cf"></div>
+	</div>
+</div>
+<!--ad-->
+<div class="bg-white mt10">
+<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/ad/3.jpg"></a>
+</div>
+<!--木工推荐-->
+<div class="bg-white mt10" id="designer">
+	<div class="box-head">
+		<h2>木工推荐</h2>
+	</div>
+	<div class="wp memberlist">
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				张涛
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计总监
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				李泽鸿
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				首席设计师
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				欧阳郝成
+				<span>80人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计师
+			</div>
+		</li>
+		<div class="am-cf"></div>
+	</div>
+</div>
+<!--油漆工推荐-->
+<div class="bg-white mt10" id="designer">
+	<div class="box-head">
+		<h2>油漆工推荐</h2>
+	</div>
+	<div class="wp memberlist">
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				张涛
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计总监
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				李泽鸿
+				<span>40人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				首席设计师
+			</div>
+		</li>
+		<li class="memberlist-item">
+			<div class="memberlist-thumb">
+				<a href=""><img class="lazy" data-original="__TMPL__assets/static/image/page/member/1.jpg"></a>
+			</div>
+			<div class="memberlist-title">
+				<a href="">
+				欧阳郝成
+				<span>80人付款</span>
+				</a>
+			</div>
+			<div class="memberlist-job">
+				设计师
+			</div>
+		</li>
+		<div class="am-cf"></div>
+	</div>
+</div>
+<!--承诺-->
+<div class="wp bg-white mt10" id="committed">
+	<div id="committed-head">
+		<i class="icon-committed"></i>
+	</div>
+	<div id="committed-items">
+		<a href=""><i class="icon-free"></i><p>免费报价</p></a>
+		<a href=""><i class="icon-volume"></i><p>预约量房</p></a>
+		<a href=""><i class="icon-service"></i><p>维修中心</p></a>
+		<a href="" class="committed-phone"><i class="icon-phone"></i><p>24小时<br/>售后热线</p></a>
+		<div class="am-cf"></div>
+	</div>
+</div>
+<!-- <include file='public:footer_new'/>   
+<script src="__TMPL__assets/static/js/page.js?v=<?=time()?>"></script> -->
+<!--底部-->
+<div  id="footbox">
+	<div id="footbox-warp">
+	<a href="<{:U('index/index')}>" class="active">
+		<i class="icon-home"></i>
+		<p>首页</p>
+	</a>
+	<a href="">
+		<i class="icon-bbs"></i>
+		<p>社区论坛</p>
+	</a>
+	<a href="">
+		<i class="icon-ask"></i>
+		<p>问大家</p>
+	</a>
+	<a href="">
+		<i class="icon-cart"></i>
+		<p>购物车</p>
+	</a>
+	<a href="<{:U('mcenter/index/index')}>">
+		<i class="icon-my"></i>
+		<p>我的</p>
+	</a>
+	<div class="am-cf"></div>
+	</div>
+</div>
+
+
+<include file='public:footer_new'/>   
+<script src="__TMPL__assets/static/js/index.js?v=<?=time()?>"></script>
